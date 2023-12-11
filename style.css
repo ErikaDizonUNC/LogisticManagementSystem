@@ -1,0 +1,330 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0, 0, 0, 0.938)50%);
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: #C5120B;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #C5120B;
+}
+
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #C5120B;
+    margin-top: 13px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #C5120B;
+    border: 2px solid #C5120B;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #000;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Global Styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Styles */
+.head-login {
+        background-image: url('https://cdn.shopify.com/s/files/1/0748/0595/files/1_2173c1dc-841b-4578-8c19-7e2e1ad6f110.jpg?v=1630297996'); 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 100vh;
+        padding: auto;
+        box-shadow: 0 0 10px #FFFFFF;
+    }
+    
+   
+    
+
+
+
+
+.head-login img {
+    width: 200px;
+  height: 300px;
+  object-fit: cover;
+}
+
+
+/* Login Panel Styles */
+.login-panel {
+    transform: translate(-50%);
+    background-color: #000000;
+    padding: 10px;
+    box-shadow: 0 0 20px #FFFFFF;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 300%;
+    max-width: 400px;
+
+   
+   
+}
+
+
+
+
+.title {
+    font-family: 'Times New Roman';
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.9; 
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+p {
+    color: #FFFFFF;
+    font-family: 'Times New Roman';
+    font-size: 20px; 
+    font-weight: normal; 
+    line-height: 1.5; 
+}
+
+#resetPassButton {
+    color: #FFFFFF;font-family: 'Times New Roman';
+    font-size: 20px; 
+    font-weight: normal; 
+    line-height: 1.5; 
+}
+
+
+
+.styled-dropdown select,
+.login-display-toggle input,
+.loginPass input,
+.loginPass .showPass {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.solid-red-button,
+.solid-button,
+.hollow-red-button,
+.hollow-green-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 15px; /* Adjust as needed */
+}
+
+.solid-red-button,
+.solid-button {
+    background-color: #C5120B;
+    color: #fff;
+}
+
+.hollow-red-button,
+.hollow-green-button {
+    border: 2px solid #C5120B;
+    color: #d9534f;
+}
+
+.solid-button:hover,
+.hollow-red-button:hover,
+.hollow-green-button:hover {
+    background-color: #5bc0de;
+    color: #fff;
+}
+
+
+
+
+.header-nav {
+    background-color: #000000;
+    color: #fff;
+}
+
+.header-logo p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header-links ul {
+    list-style: none;
+    display: flex;
+}
+
+.header-links li {
+    margin-right: 20px;
+}
+
+.header-links a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.top-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.hollow-red-button,
+.hollow-green-button {
+    margin-left: 10px;
+}
+
+/* Promotional Section Styles */
+
+#products .title p.section-title {
+    background-color: black;
+    color: white; /* Set text color to white or any other contrasting color */
+    padding: 10px; /* Adjust padding as needed */
+}
+
+
+
+.title-button {
+    background-color: #000000;
+    
+    font-size: 10px;
+    color: #fff;
+    text-align: center;
+    
+}
+
+
+.tiles {
+    background-color: #000;
+    color: #fff;
+    padding: 20px; /* Adjust as needed */
+}
+
+.tile {
+    background-color: #000;
+    border: 2px solid #fff; /* Add border if desired */
+    color: #fff;
+    padding: 15px; /* Adjust as needed */
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.tile-head {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+.tile-desc {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+}
