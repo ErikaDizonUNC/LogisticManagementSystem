@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zus Customs</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-rv4qgzlXX0mR1CbqB6SADvdi2CqAMQbPWHA7r8s2p85UKFjEAg/rL9PUVRv0ZnTv" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-rv4qgzlXX0mR1CbqB6SADvdi2CqAMQbPWHA7r8s2p85UKFjEAg/rL9PUVRv0ZnTv" crossorigin="anonymous">
+    <title>Logistic Management System</title>
 </head>
 <div class="main">
     <div class="navbar">
@@ -16,10 +16,10 @@
         <div class="menu">
             <ul class="nav navbar-nav">
                 <li class="menulist home"><a href="/">Home</a></li>
-                <li class="menulist home"><a :href="Bestsellers.html'">Best Sellers</a></li>
-                <li class="menulist home"><a :href="New Arrival.html'">New Arrivals</a></li>
-                <li class="menulist home"><a href="shopping_cart.html">Shopping Cart</a></li>
-                <li class="menulist home"><a href="trackorder.html">Logistics Inquiry</a></li>
+                <li class="menulist best-sellers"><a href="Bestsellers.html">Best Sellers</a></li>
+                <li class="menulist new-arrivals"><a href="NewArrival.html">New Arrivals</a></li>
+                <li class="menulist shopping-cart"><a href="shopping_cart.html">Shopping Cart</a></li>
+                <li class="menulist track-order"><a href="track_order.html">Logistics Inquiry</a></li>
             </ul>
         </div>
 
@@ -49,11 +49,23 @@
                 
                 <div class="select-dropdown styled-dropdown">
                     <select name="" id="roleDropdown">
+                        
                         <option value="W">WAREHOUSE</option>
                         <option value="M">MAIN BRANCH</option>
                         <option value="B">BRANCHES</option>
                     </select>
                 </div>
+
+
+
+                
+
+
+
+
+
+
+
                 
                 <div class="login-display-toggle employee">
                     <div><input id="loginIdText" type="text" placeholder='User Name'></div>
@@ -76,7 +88,10 @@
                         <address class="header-contact large-4 columns end">
                             <div class="row collapse register">
                                 <div class="large-6 medium-6 column ques">Not yet registered?</div>
-                                <div class="hollow-green-button large-6 medium-6 columns medium-3 medium-centered"><a href="/register">Register Now</a></div>
+                                <div class="hollow-green-button large-6 medium-6 columns medium-3 medium-centered">
+                                    <a href="register.html">Register Now</a>
+                                </div>
+                                
                             </div>
                         </address>   
                     
@@ -171,33 +186,14 @@
                 <p class="via-logo"></p>
         </div>
         <div class="header-links large-7 column">
-            <ul data-bar-offset="50">
-                <li><a data-scroll-update href="#products">Products</a></li>
-                <li><a data-scroll-update href="#about-us">About Us</a></li>
-                
-                <li><a data-scroll-update href="#clients-speak">Clients Speak</a></li>
-                <li><a data-scroll-update href="#Design">design</a></li>
-                
-                <li><a data-scroll-update href="#contact-us">Contact Us</a></li>
-            </ul>
+          
         </div>
         <div class="large-3 column top-buttons">
-            <div class="hollow-red-button"><a href="#loginForm">Login</a></div>
             
-            <div class="hollow-green-button"><a href="/register">Register</a></div>
-        </div>
 </header>
 </div>
 
-<section class="title-button" id="titleButton">
-        
-    <h1 class="section-title">WE BUILD, WE CUSTOMIZED, AND WE CREATE</h1>
-    <h2 class="section-sub-title">Elevate your wardrobe with the artistry of personalized fashion. Our passion for tailoring and design extends beyond mere garments; we create wearable expressions of your individuality. Let us transform your style aspirations into tangible reality, crafting pieces that exude confidence and grace</h2>
-    
-    
-    <div class="solid-button row large-3 columns large-centered medium-3 medium-centered"><a href="/register">Register Now</a></div>
-    
-</section>
+
 
     <section id="products" data-equalizer data-equalize-on="large" class="via-products tile-showcase row">
     <div class="title large-12 columns">
@@ -243,8 +239,17 @@
                 <p class="tile-desc">At ZUSCUSTOM, our T-shirts are not just pieces of fabric; they're canvases waiting to be painted with your unique style. Each stitch tells a story, and every design reflects the individuality that sets you apart. We love our customers and encourage you to unleash your creativity—design and personalize your T-shirt to make it exclusively yours.</p>
             </div>
         </li>
+
     </ul>
 </section>
+
+
+
+
+
+<footer>
+    <p>&copy; 2023  Logistic Management System</p>
+</footer>
 
 
 
@@ -253,4 +258,5 @@
 
 
 </body>
-</html>
+</html>    
+     

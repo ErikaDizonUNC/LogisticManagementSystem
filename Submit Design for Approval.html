@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design Approval Workflow</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    #design-container {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+    }
+
+    #design {
+      width: 300px;
+      height: 300px;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    #approval-stages {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .stage {
+      text-align: center;
+      padding: 10px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+    }
+
+    .approved {
+      background-color: #4CAF50;
+      color: #fff;
+    }
+
+    .current {
+      font-weight: bold;
+    }
+
+    #submit-btn {
+      padding: 10px;
+      background-color: #2196F3;
+      color: #fff;
+      cursor: pointer;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="design-container">
+    <div id="design">
+      <!-- Design preview or uploaded design goes here -->
+      <!-- For simplicity, we'll just show a placeholder text -->
+      <p>Design Preview</p>
+    </div>
+  </div>
+
+  <div id="approval-stages">
+    <div class="stage" id="customer-stage">Customer</div>
+    <div class="stage" id="staff-stage">Staff</div>
+    <div class="stage" id="approval-stage">Approved</div>
+  </div>
+
+  <button id="submit-btn">Submit for Approval</button>
+
+  <script>
+    const designContainer = document.getElementById('design-container');
+    const customerStage = document.getElementById('customer-stage');
+    const staffStage = document.getElementById('staff-stage');
+    const approvalStage = document.getElementById('approval-stage');
+    const submitButton = document.getElementById('submit-btn');
+
+    // Simulated design data
+    const designData = {
+      status: 'customer',
+      // Other design details could be added here
+    };
+
+    // Function to update the design preview
+    function updateDesignPreview() {
+      // Update the design preview based on the design data
+      // For simplicity, we'll just show a placeholder text
+      designContainer.innerHTML = `<div id="design">Design Preview - ${designData.status}</div>`;
+    }
+
+    // Function to update the approval stages
+    function updateApprovalStages() {
+      // Remove all classes from stages
+      [customerStage, staffStage, approvalStage].forEach(stage => {
+        stage.classList.remove('current', 'approved');
+      });
+
+      // Add the 'current' class to the current stage
+      document.getElementById(`${designData.status}-stage`).classList.add('current');
+
+      // Add the 'approved' class to the approval stage if it's approved
+      if (designData.status === 'approved') {
+        approvalStage.classList.add('approved');
+      }
+    }
+
+    // Function to handle the submission button click
+    function handleSubmitButtonClick() {
+      // Change the status to the next stage
+      switch (designData.status) {
+        case 'customer':
+          designData.status = 'staff';
+          break;
+        case 'staff':
+          designData.status = 'approved';
+          break;
+        case 'approved':
+          // Design is already approved
+          break;
+        default:
+          break;
+      }
+
+      // Update the design preview and approval stages
+      updateDesignPreview();
+      updateApprovalStages();
+    }
+
+    // Attach event listener to the submit button
+    submitButton.addEventListener('click', handleSubmitButtonClick);
+
+    // Initial update
+    updateDesignPreview();
+    updateApprovalStages();
+  </script>
+</body>
+</html>
